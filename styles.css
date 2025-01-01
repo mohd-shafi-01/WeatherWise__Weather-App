@@ -1,0 +1,288 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bgImg.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 550px;
+    margin: 90px auto 50px;
+    /*background: linear-gradient(120deg, #36C2CE, #77E4C8, #91DDCF); */
+    border-radius: 10px;
+    padding: 20px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.search-box{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search-bar{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+#search-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#search-btn img{
+    width: 20px;
+}
+
+.location-box{
+    font-size: 18px;
+    color: #fff;
+    
+}
+
+.location{
+    margin-left: 3px;
+}
+
+.icon{
+    margin-left: 25px;
+}
+
+.weather-info{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-1{
+    width: 50%;
+}
+
+.col-2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp{
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.condition{
+    color: #fff;
+    font-size: 27px;
+}
+
+.more-info{
+    margin: 10px auto;
+    display: flex;
+}
+
+.humidity-col{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.humidity-col img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.humidity-box{
+    margin-left: 30px;
+}
+
+.humidity-box p{
+    font-size: 18px;
+    color: #fff;
+}
+
+.wind-col{
+    width: 50%;
+    display: flex;
+}
+
+.wind-col img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.wind-box{
+    margin-left: 30px;
+}
+
+.wind-box p{
+    font-size: 18px;
+    color: #fff;
+}
+
+
+/******************************Responsive Design**************************/
+
+/* xxl */
+
+@media (max-width: 1536px) {
+    .container{
+        max-width: 550px;
+    }
+}
+
+/* xl */
+
+@media (max-width: 1280px) {
+    .container{
+        max-width: 550px;
+    }
+}
+
+/* lg */
+
+@media (max-width: 1024px) {
+    .container{
+        max-width: 550px;
+    }
+}
+
+/* Tab S */
+
+@media (max-width: 991px) {
+    .container{
+        max-width: 450px;
+    }
+}
+
+/* Mobile L */
+
+@media (max-width: 767px) {
+    .container{
+        max-width: 400px;
+    }
+    .col-1 img{
+        width: 100%;
+    }
+    .humidity-col{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .wind-col{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .humidity-col img{
+        margin-left: 0px;
+        border: 0px;
+    }
+    .humidity-box{
+        margin-left: 0px;  
+        margin-top: 5px;
+        text-align: center;
+        border: 0px;
+    }
+    .wind-col img{
+        margin-left: 0px;
+        border: 0px;
+    }
+    .wind-box{
+        margin-left: 0px;
+        margin-top: 5px;
+        text-align: center;
+        border: 0px;
+    }
+}
+
+/* Mobile M */
+
+@media (max-width: 575px) {
+    .container{
+        max-width: 350px;
+    }
+}
+
+/* Mobile S */
+
+@media (max-width: 428px) {
+    .container{
+        max-width: 100%;
+        height: 100%;
+        margin-top: 0;
+        border: none;
+        border-radius: none;
+    }
+    .weather-info{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-1{
+        width: 70%;
+    }
+    .col-2{
+        width: 60%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .more-info{
+        margin: 50px auto;
+    }
+    .humidity-col{
+        display: flex;
+        align-items: center;
+    }
+    .humidity-box{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .humidity-box p:last-child{
+        font-size: 20px;
+    }
+    .wind-col{
+        display: flex;
+        align-items: center;
+    }
+    .wind-box{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .wind-box p:last-child {
+        font-size: 20px;
+    }
+}
+
