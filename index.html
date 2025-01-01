@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherWise</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <!----------------------------------Container------------------------------->
 
     <div class="container">
-        <div class="search-box">
-            <input  type="text" id="search-bar" placeholder="Enter city or location" spellcheck="false" required />
-            <button type="submit" id="search-btn"><img src="images/search.png"></button>
+      <div class="search-box">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="Enter city or location"
+          spellcheck="false"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" id="search-btn">
+          <img src="images/search.png" />
+        </button>
+      </div>
+      <div class="location-box">
+        <span class="icon"><i class="fa fa-map-marker"></i></span>
+        <span class="location">Location</span>
+      </div>
+
+      <!----------------------------Weather Info-------------------------------->
+
+      <div class="weather-info">
+        <div class="col-1">
+          <img src="images/homeIcon.png" class="weather-icon" />
         </div>
-        <div class="location-box">
-            <span class="icon"><i class="fa fa-map-marker"></i></span>
-            <span class="location">Location</span>
+        <div class="col-2">
+          <h1 class="temp">0°C</h1>
+          <h2 class="condition">--</h2>
         </div>
-        
+      </div>
 
-    <!----------------------------Weather Info-------------------------------->
+      <!-----------------------------More Info----------------------------------->
 
-        <div class="weather-info">
-            <div class="col-1">
-                <img src="images/homeIcon.png" class="weather-icon">
-            </div>
-            <div class="col-2">
-                <h1 class="temp">0°C</h1>
-                <h2 class="condition">--</h2>
-            </div>
+      <div class="more-info">
+        <div class="humidity-col">
+          <img src="images/humidity.png" />
+          <div class="humidity-box">
+            <p class="humidity">--</p>
+            <p>Humidity</p>
+          </div>
         </div>
 
-    <!-----------------------------More Info----------------------------------->
-
-        <div class="more-info">
-            <div class="humidity-col">
-                <img src="images/humidity.png">
-                <div class="humidity-box">
-                    <p class="humidity">--</p>
-                    <p>Humidity</p>
-                </div>
-            </div>
-
-            <div class="wind-col">
-                <img src="images/wind.png">
-                <div class="wind-box">
-                    <p class="wind">--</p>
-                    <p>Wind Speed</p>
-                </div>
-            </div>
-
+        <div class="wind-col">
+          <img src="images/wind.png" />
+          <div class="wind-box">
+            <p class="wind">--</p>
+            <p>Wind Speed</p>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!----------------------------------Script------------------------------------>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
