@@ -19,3 +19,7 @@ A simple and interactive web application to check the current weather conditions
 - **HTML**: For the structure of the application.
 - **CSS**: For styling and ensuring a responsive layout.
 - **JavaScript**: For handling API calls and dynamic updates.
+
+---
+
+⭐ If you like this project, give it a star! ⭐
